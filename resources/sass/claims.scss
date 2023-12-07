@@ -1,0 +1,121 @@
+header {
+   border-bottom: 1px solid #efefef;
+}
+
+.form__box {
+   width: 100%;
+   max-width: 375px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   min-height: calc(100vh - 146px);
+   margin: 0 auto;
+
+   .step {
+      width: 100%;
+   }
+}
+
+.step-wrapper {
+   width: 100%;
+   position: relative;
+   background-color: #e7eaed;
+   border-radius: 10px;
+   padding: 24px 16px;
+
+   .select2 {
+      width: 100%;
+   }
+}
+
+.continue-button {
+   width: 100%;
+   outline: 0;
+   font-size: 16px;
+   line-height: 150%;
+   font-weight: 500;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+label {
+   margin-bottom: 6px;
+   font-size: 16px;
+   line-height: 150%;
+   color: #172f6f;
+}
+
+.modal-content {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-clip: padding-box;
+   border: 1px solid rgba(0,0,0,.2);
+   border-radius: 0.3rem;
+   max-width: 480px;
+   margin: 10px auto 24px;
+   background-color: #fff;
+   padding: 38px 25px 31px;
+   position: relative;
+
+   .close {
+      background: 0 0;
+      color: #a0a0a0;
+      position: absolute;
+      top: 18px;
+      right: 14px;
+      z-index: 505;
+      border: none;
+      width: 20px;
+      height: 20px;
+      outline: 0;
+      cursor: pointer;
+
+      &:before {
+         transform: rotate(45deg);
+      }
+      &:after {
+         transform: rotate(-45deg);
+      }
+
+      &:after, &:before {
+         display: inline-block;
+         width: 22px;
+         height: 1px;
+         background-color: #a0a0a0;
+         border-radius: 5px;
+         position: absolute;
+         left: 0;
+         content: "";
+      }
+   }
+
+   p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+   }
+
+   .form-group {
+      text-align: center;
+      margin-bottom: 1rem;
+
+      button {
+         width: 100%;
+         min-height: 56px;
+         text-transform: uppercase;
+         outline: 0!important;
+         font-size: 16px;
+         line-height: 150%;
+         font-weight: 500;
+         background-color: #2f80ed;
+         color: #fff;
+         border-radius: 10px;
+         transition: background-color .4s,color .4s,border-radius .4s,border .4s;
+         border: 1px solid #2f80ed;
+         text-decoration: none;
+      }
+   }
+}
